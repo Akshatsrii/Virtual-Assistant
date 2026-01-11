@@ -15,9 +15,7 @@
   [Demo](#-demo) • [Features](#-features) • [Installation](#-installation--setup) • [Documentation](#-how-it-works)
 </div>
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
-</p>
+
 
 ## 📌 Overview
 
@@ -35,9 +33,6 @@ Welcome to the **Virtual Assistant** – a revolutionary AI-powered companion th
 - ⚡ **Lightning Fast**: Real-time processing with optimized performance
 - 📱 **Responsive Design**: Works seamlessly across all devices
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
-</p>
 
 ## ✨ Features
 
@@ -81,14 +76,12 @@ Welcome to the **Virtual Assistant** – a revolutionary AI-powered companion th
 - 🌙 Dark mode support
 - ♿ Accessibility features
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
-</p>
+
 
 ## 🛠️ Tech Stack
 
 <div align="center">
-  <img src="./assets/image4.png" width="70%" alt="Technology Stack"/>
+
 </div>
 
 ### 🎨 **Frontend**
@@ -121,7 +114,7 @@ Welcome to the **Virtual Assistant** – a revolutionary AI-powered companion th
 ```
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+  
 </p>
 
 ## ⚙️ Installation & Setup
@@ -185,7 +178,7 @@ http://localhost:5173
 ```
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+
 </p>
 
 ## 🔑 Environment Variables
@@ -211,13 +204,13 @@ http://localhost:5173
 | `VITE_API_URL` | Backend API URL | `http://localhost:8000/api` |
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+ 
 </p>
 
 ## 🚀 How It Works
 
 <div align="center">
-  <img src="./assets/workflow.png" width="85%" alt="Application Workflow"/>
+
 </div>
 
 ### 📝 Step-by-Step Process
@@ -248,7 +241,7 @@ http://localhost:5173
    - User can replay or interrupt as needed
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+ 
 </p>
 
 ## 📸 Screenshots
@@ -262,7 +255,7 @@ http://localhost:5173
 </div>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+ 
 </p>
 
 ## 🎬 Demo
@@ -274,7 +267,7 @@ http://localhost:5173
 </div>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+
 </p>
 
 ## 📁 Project Structure
@@ -305,7 +298,7 @@ virtual-assistant/
 ```
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+ 
 </p>
 
 ## 🤝 Contributing
@@ -319,7 +312,7 @@ We welcome contributions! Here's how you can help:
 5. 🎉 Open a Pull Request
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+
 </p>
 
 ## 📝 License
@@ -327,7 +320,7 @@ We welcome contributions! Here's how you can help:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+ 
 </p>
 
 ## 👨‍💻 Author
@@ -339,7 +332,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Email: your.email@example.com
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+ 
 </p>
 
 ## 🙏 Acknowledgments
@@ -350,7 +343,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - All contributors who help improve this project
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+
 </p>
 
 <div align="center">
@@ -362,5 +355,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 </div>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+  
 </p>
