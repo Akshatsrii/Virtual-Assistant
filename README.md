@@ -15,15 +15,13 @@
   [Demo](#-demo) • [Features](#-features) • [Installation](#-installation--setup) • [Documentation](#-how-it-works)
 </div>
 
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+</p>
 
 ## 📌 Overview
 
 Welcome to the **Virtual Assistant** – a revolutionary AI-powered companion that brings the future of human-computer interaction to your fingertips! Built with the powerful **MERN stack** and integrated with **Google's Gemini AI**, this assistant delivers an immersive, personalized experience through natural voice conversations.
-
-<div align="center">
-  <img src="./assets/image1.png" width="80%" alt="Virtual Assistant Interface"/>
-</div>
 
 ### 🎯 What Makes It Special?
 
@@ -33,12 +31,11 @@ Welcome to the **Virtual Assistant** – a revolutionary AI-powered companion th
 - ⚡ **Lightning Fast**: Real-time processing with optimized performance
 - 📱 **Responsive Design**: Works seamlessly across all devices
 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+</p>
 
 ## ✨ Features
-
-<div align="center">
-  <img src="./assets/image2.jpg" width="90%" alt="Features Overview"/>
-</div>
 
 ### 🔐 **Authentication System**
 - ✅ Secure Sign Up & Sign In
@@ -76,13 +73,11 @@ Welcome to the **Virtual Assistant** – a revolutionary AI-powered companion th
 - 🌙 Dark mode support
 - ♿ Accessibility features
 
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+</p>
 
 ## 🛠️ Tech Stack
-
-<div align="center">
-
-</div>
 
 ### 🎨 **Frontend**
 ```
@@ -114,7 +109,7 @@ Welcome to the **Virtual Assistant** – a revolutionary AI-powered companion th
 ```
 
 <p align="center">
-  
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
 </p>
 
 ## ⚙️ Installation & Setup
@@ -178,14 +173,10 @@ http://localhost:5173
 ```
 
 <p align="center">
-
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
 </p>
 
 ## 🔑 Environment Variables
-
-<div align="center">
-  <img src="./assets/image5.png" width="60%" alt="Environment Setup"/>
-</div>
 
 ### Backend (.env)
 
@@ -204,14 +195,10 @@ http://localhost:5173
 | `VITE_API_URL` | Backend API URL | `http://localhost:8000/api` |
 
 <p align="center">
- 
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
 </p>
 
 ## 🚀 How It Works
-
-<div align="center">
-
-</div>
 
 ### 📝 Step-by-Step Process
 
@@ -241,33 +228,23 @@ http://localhost:5173
    - User can replay or interrupt as needed
 
 <p align="center">
- 
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
 </p>
 
 ## 📸 Screenshots
 
-<div align="center">
-  <img src="./assets/screenshot-1.png" width="45%" alt="Login Screen"/>
-  <img src="./assets/screenshot-2.png" width="45%" alt="Dashboard"/>
-  <br/>
-  <img src="./assets/screenshot-3.png" width="45%" alt="Assistant Selection"/>
-  <img src="./assets/screenshot-4.png" width="45%" alt="Voice Interaction"/>
-</div>
+Coming soon! Screenshots will be added to showcase the application interface.
 
 <p align="center">
- 
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
 </p>
 
 ## 🎬 Demo
 
-<div align="center">
-  <img src="./assets/demo.gif" width="80%" alt="Live Demo"/>
-  
-  **[🎥 Watch Full Demo Video](https://your-demo-link.com)**
-</div>
+**[🎥 Watch Full Demo Video](https://your-demo-link.com)**
 
 <p align="center">
-
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
 </p>
 
 ## 📁 Project Structure
@@ -298,7 +275,7 @@ virtual-assistant/
 ```
 
 <p align="center">
- 
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
 </p>
 
 ## 🤝 Contributing
@@ -312,7 +289,7 @@ We welcome contributions! Here's how you can help:
 5. 🎉 Open a Pull Request
 
 <p align="center">
-
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
 </p>
 
 ## 📝 License
@@ -320,7 +297,7 @@ We welcome contributions! Here's how you can help:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 <p align="center">
- 
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
 </p>
 
 ## 👨‍💻 Author
@@ -332,7 +309,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Email: your.email@example.com
 
 <p align="center">
- 
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
 </p>
 
 ## 🙏 Acknowledgments
@@ -343,7 +320,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - All contributors who help improve this project
 
 <p align="center">
-
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
 </p>
 
 <div align="center">
@@ -355,5 +332,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 </div>
 
 <p align="center">
-  
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
 </p>
