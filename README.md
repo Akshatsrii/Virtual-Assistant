@@ -5,13 +5,16 @@
 </p>
 
 <div align="center">
-  
+
   [![Made with MERN](https://img.shields.io/badge/Made%20with-MERN-00D9FF?style=for-the-badge&logo=mongodb)](https://github.com)
   [![Powered by Gemini AI](https://img.shields.io/badge/Powered%20by-Gemini%20AI-4285F4?style=for-the-badge&logo=google)](https://ai.google.dev/)
+  [![Live Demo](https://img.shields.io/badge/Live-Demo-00C853?style=for-the-badge&logo=vercel)](https://virtual-assistant-kduc-three.vercel.app/signin)
   [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
-  
+
   **An intelligent, voice-powered AI assistant built with cutting-edge technology**
-  
+
+  ### 🌐 [**Try the Live Demo →**](https://virtual-assistant-kduc-three.vercel.app/signin)
+
   [Demo](#-demo) • [Features](#-features) • [Installation](#-installation--setup) • [Documentation](#-how-it-works)
 </div>
 
@@ -22,6 +25,8 @@
 ## 📌 Overview
 
 Welcome to the **Virtual Assistant** – a revolutionary AI-powered companion that brings the future of human-computer interaction to your fingertips! Built with the powerful **MERN stack** and integrated with **Google's Gemini AI**, this assistant delivers an immersive, personalized experience through natural voice conversations.
+
+**🔗 Live Application:** [virtual-assistant-kduc-three.vercel.app](https://virtual-assistant-kduc-three.vercel.app/signin)
 
 ### 🎯 What Makes It Special?
 
@@ -108,11 +113,38 @@ Welcome to the **Virtual Assistant** – a revolutionary AI-powered companion th
 🌐  REST API - Communication
 ```
 
+### ☁️ **Deployment**
+```
+▲   Vercel - Frontend Hosting & CI/CD
+```
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
+</p>
+
+## 🎬 Demo
+
+### 🌐 Live Application
+
+> **[👉 Launch Virtual Assistant](https://virtual-assistant-kduc-three.vercel.app/signin)**
+
+Sign up, pick an avatar, name your assistant, and start talking — it's live and ready to try right now.
+
+| | |
+|---|---|
+| 🔗 **Live URL** | [virtual-assistant-kduc-three.vercel.app](https://virtual-assistant-kduc-three.vercel.app/signin) |
+| 🚀 **Hosting** | Vercel |
+| 📱 **Access** | Any modern browser, desktop or mobile |
+
+**[🎥 Watch Full Demo Video](https://your-demo-link.com)**
+
 <p align="center">
   <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
 </p>
 
 ## ⚙️ Installation & Setup
+
+> 💡 Want to try it instantly without setup? Use the **[Live Demo](https://virtual-assistant-kduc-three.vercel.app/signin)** instead. The steps below are for running it locally.
 
 ### 📋 Prerequisites
 
@@ -171,6 +203,8 @@ Open your browser and navigate to:
 ```
 http://localhost:5173
 ```
+
+Or skip local setup entirely and use the **[hosted version](https://virtual-assistant-kduc-three.vercel.app/signin)**.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
@@ -233,15 +267,7 @@ http://localhost:5173
 
 ## 📸 Screenshots
 
-Coming soon! Screenshots will be added to showcase the application interface.
-
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
-</p>
-
-## 🎬 Demo
-
-**[🎥 Watch Full Demo Video](https://your-demo-link.com)**
+Coming soon! Screenshots will be added to showcase the application interface. In the meantime, check out the **[live app](https://virtual-assistant-kduc-three.vercel.app/signin)**.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
@@ -292,7 +318,6 @@ We welcome contributions! Here's how you can help:
   <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" />
 </p>
 
-
 ## 🙏 Acknowledgments
 
 - Google Gemini AI Team for the amazing API
@@ -305,11 +330,11 @@ We welcome contributions! Here's how you can help:
 </p>
 
 <div align="center">
-  
+
   **Made with ❤️ and ☕ by developers, for developers**
-  
-  ⭐ **Star this repo if you found it helpful!** ⭐
-  
+
+  ### 🌐 [**Live Demo**](https://virtual-assistant-kduc-three.vercel.app/signin) &nbsp;|&nbsp; ⭐ **Star this repo if you found it helpful!** ⭐
+
 </div>
 
 <p align="center">
