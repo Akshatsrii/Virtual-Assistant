@@ -1,4 +1,4 @@
-import axios from "axios";
+import { GoogleGenAI } from "@google/genai";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -16,7 +16,7 @@ const geminiResponse = async (
   }
 
   const MODEL = "gemini-2.5-flash";
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${apiKey}`;
+  const ai = new GoogleGenAI({ apiKey });
 
   // ✅ FIXED SYSTEM PROMPT
   const prompt = `
@@ -65,30 +65,14 @@ ${userInput}
 `;
 
   try {
-    const response = await axios.post(
-      url,
-      {
-        contents: [
-          {
-            parts: [{ text: prompt }],
-          },
-        ],
-      },
-      {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
+    const response = await ai.models.generateContent({
+      model: MODEL,
+      contents: prompt,
+    });
 
-    return (
-      response.data?.candidates?.[0]?.content?.parts?.[0]?.text || ""
-    );
+    return response.text || "";
   } catch (error) {
-    const errorMsg =
-      error.response?.data?.error?.message || error.message;
-
-    console.error(`🤖 Gemini Error [${MODEL}]:`, errorMsg);
+    console.error(`🤖 Gemini Error [${MODEL}]:`, error.message);
     return "";
   }
 };

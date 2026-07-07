@@ -44,8 +44,11 @@ export const signUp = async (req, res) => {
       success: true,
       user: {
         id: user._id,
+        _id: user._id,
         name: user.name,
         email: user.email,
+        assistantName: user.assistantName,
+        assistantImage: user.assistantImage,
       },
     });
 
@@ -88,8 +91,11 @@ export const login = async (req, res) => {
       success: true,
       user: {
         id: user._id,
+        _id: user._id,
         name: user.name,
         email: user.email,
+        assistantName: user.assistantName,
+        assistantImage: user.assistantImage,
       },
     });
 

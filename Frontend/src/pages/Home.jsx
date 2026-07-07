@@ -15,9 +15,13 @@ function Home() {
   const recognitionRef = useRef(null);
   const isRecognizingRef = useRef(false);
   const isSpeakingRef = useRef(false);
+  const isDirectCommandRef = useRef(false);
+  const isProcessingRef = useRef(false);
+  const activeUtteranceRef = useRef(null);
 
   const [listening, setListening] = useState(false);
   const [audioUnlocked, setAudioUnlocked] = useState(false);
+  const [voiceCallMode, setVoiceCallMode] = useState(true);
 
   const synth = window.speechSynthesis;
 
@@ -35,23 +39,40 @@ function Home() {
         ? text
         : "Sorry, I could not get the response.";
 
+    // Reset SpeechSynthesis queue to prevent Chrome freeze
+    synth.cancel();
+    isSpeakingRef.current = false;
+
     if (recognitionRef.current && isRecognizingRef.current) {
       recognitionRef.current.stop();
     }
 
     const speakNow = () => {
       const voices = synth.getVoices();
-      if (!voices.length) return;
-
       const utterance = new SpeechSynthesisUtterance(finalText);
-      utterance.voice =
-        voices.find((v) => v.lang === "en-US") || voices[0];
+      
+      // Keep object alive so Chrome doesn't garbage collect it and drop events
+      activeUtteranceRef.current = utterance;
+      
+      if (voices.length > 0) {
+        utterance.voice =
+          voices.find((v) => v.lang.toLowerCase().startsWith("hi")) ||
+          voices.find((v) => v.lang.toLowerCase().startsWith("en")) ||
+          voices[0];
+      }
 
       isSpeakingRef.current = true;
 
       utterance.onend = () => {
         isSpeakingRef.current = false;
-        setTimeout(startRecognitionSafe, 1000);
+        activeUtteranceRef.current = null;
+        setTimeout(startRecognitionSafe, 800);
+      };
+
+      utterance.onerror = () => {
+        isSpeakingRef.current = false;
+        activeUtteranceRef.current = null;
+        setTimeout(startRecognitionSafe, 800);
       };
 
       synth.speak(utterance);
@@ -70,6 +91,7 @@ function Home() {
       recognitionRef.current &&
       !isRecognizingRef.current &&
       !isSpeakingRef.current &&
+      !isProcessingRef.current &&
       audioUnlocked
     ) {
       try {
@@ -92,7 +114,7 @@ function Home() {
     }
 
     const recognition = new SpeechRecognition();
-    recognition.continuous = true;
+    recognition.continuous = !voiceCallMode;
     recognition.lang = "en-US";
 
     recognitionRef.current = recognition;
@@ -117,11 +139,9 @@ function Home() {
 
       console.log("🎤 Heard:", transcript);
 
-      if (
-        transcript
-          .toLowerCase()
-          .includes(userData.assistantName.toLowerCase())
-      ) {
+      if (voiceCallMode) {
+        // In Voice Call Mode, automatically respond to all speech segments upon pause
+        isProcessingRef.current = true;
         recognition.stop();
 
         let data = null;
@@ -129,17 +149,40 @@ function Home() {
           data = await getGeminiResponse(transcript);
         } catch {}
 
+        isProcessingRef.current = false;
         console.log("🤖 Gemini data:", data);
 
         // 🔥 ALWAYS SPEAK
         speak(data?.response);
+      } else {
+        // In Wake Word Mode, only respond when the assistant's name is mentioned
+        const hasWakeWord = transcript
+          .toLowerCase()
+          .includes(userData.assistantName.toLowerCase());
+
+        if (hasWakeWord || isDirectCommandRef.current) {
+          isDirectCommandRef.current = false;
+          isProcessingRef.current = true;
+          recognition.stop();
+
+          let data = null;
+          try {
+            data = await getGeminiResponse(transcript);
+          } catch {}
+
+          isProcessingRef.current = false;
+          console.log("🤖 Gemini data:", data);
+
+          // 🔥 ALWAYS SPEAK
+          speak(data?.response);
+        }
       }
     };
 
     startRecognitionSafe();
 
     return () => recognition.stop();
-  }, [userData, audioUnlocked]);
+  }, [userData, audioUnlocked, voiceCallMode]);
 
   if (loading) {
     return (
@@ -148,6 +191,15 @@ function Home() {
       </div>
     );
   }
+
+  const handleAvatarClick = () => {
+    if (!audioUnlocked) {
+      unlockAudio();
+      return;
+    }
+    isDirectCommandRef.current = true;
+    speak(`Yes, tell me. I am listening.`);
+  };
 
   return (
     <div className="w-full h-screen bg-gradient-to-t from-black to-[#02023d] flex flex-col items-center justify-center gap-6 relative">
@@ -158,6 +210,32 @@ function Home() {
       >
         Log Out
       </button>
+
+      {/* MODE TOGGLE */}
+      {audioUnlocked && (
+        <div className="flex gap-2 bg-white/10 p-1.5 rounded-full border border-white/10 z-10">
+          <button
+            onClick={() => setVoiceCallMode(true)}
+            className={`px-5 py-2 rounded-full text-xs font-semibold transition-all duration-250 cursor-pointer ${
+              voiceCallMode
+                ? "bg-white text-black shadow-lg"
+                : "text-white/60 hover:text-white"
+            }`}
+          >
+            Voice Call Mode
+          </button>
+          <button
+            onClick={() => setVoiceCallMode(false)}
+            className={`px-5 py-2 rounded-full text-xs font-semibold transition-all duration-250 cursor-pointer ${
+              !voiceCallMode
+                ? "bg-white text-black shadow-lg"
+                : "text-white/60 hover:text-white"
+            }`}
+          >
+            Wake Word Mode
+          </button>
+        </div>
+      )}
 
       <button
         onClick={() => navigate("/customize")}
@@ -175,7 +253,10 @@ function Home() {
         </button>
       )}
 
-      <div className="w-[300px] h-[400px] rounded-3xl overflow-hidden shadow-2xl bg-gray-700 flex items-center justify-center">
+      <div 
+        onClick={handleAvatarClick}
+        className="w-[300px] h-[400px] rounded-3xl overflow-hidden shadow-2xl bg-gray-700 flex items-center justify-center cursor-pointer hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+      >
         {userData?.assistantImage ? (
           <img
             src={userData.assistantImage}
